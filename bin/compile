@@ -12,6 +12,10 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 LOGGER_FLAGS=""
 
+echo "CACHE_DIR is set to $CACHE_DIR"
+echo "BUILD_DIR is set to $BUILD_DIR"
+echo "LOGGER_FLAGS are set to $LOGGER_FLAGS"
+
 curl --silent --location http://heroku-jvm-common.s3.amazonaws.com/jvm-buildpack-common.tar.gz | tar xz
 . bin/java
 
